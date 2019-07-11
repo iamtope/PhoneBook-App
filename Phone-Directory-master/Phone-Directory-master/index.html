@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="func.js"></script>
+<meta charset="UTF-8">
+<title>Phone Book Address</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="top">
+   <div class="container">
+      <div id="bar">
+          <i class="fas fa-address-book"></i>
+       Address Book 
+      </div>
+   </div> 
+</div>
+
+
+<div class="container add">
+   <div class="quickadd"> <button type="button" class="btn btn-secondary" id="QuickAdd"><div id="content"><i class="fas fa-user-plus" id="new"></i>Add new Contact</div></button><hr></div>
+   
+   
+   <!-- FORM -->
+  
+  <div class="quickaddForm" id="form">
+  <form>
+    <h3> Please enter the details!</h3>
+    
+    
+    <br/>
+    
+
+			<div class="row">
+            <div class="col-md-3"><label for="fullname" id="unq" >Name</label>
+            </div>
+            <div class="col-md-5">
+            <input type="text" id="fullname" class="formFields" placeholder="Abass Adamo" >
+            </div>
+            </div>
+        
+		    
+		    <div class="row">
+            <div class="col-md-3"><label for="phone" id="unq1">Phone</label>
+            </div>
+            <div class="col-md-5">
+            <input type="text" id="phone" class="formFields" placeholder="+234 XXXXXXXXXX">
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-3">
+            <label for="address" id="unq2">Address</label>
+            </div>
+            <div class="col-5">
+            <textarea id="address" name="subject" placeholder="02 , Ikorodu" style="height:100px"></textarea>
+            </div>   
+            </div> 
+
+		    <div class="row">
+            <div class="col-md-3"><label for="city" id="unq3">City</label>
+            </div>
+            <div class="col-md-5">
+            <input type="text" id="city" class="formFields" placeholder="Lagos">
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-md-3"><label for="email" id="unq4">Email</label>
+            </div>
+            <div class="col-md-5">
+            <input type="text" id="email" class="formFields" placeholder="example@gmail.com">
+            </div>
+            </div>
+            
+            
+            <label id="cp"> </label>
+            
+            
+
+			
+			<br><br>
+			
+			<button type="submit" class="btn btn-secondary" id="Add"> Add </button>
+			<button type="submit" class="btn btn-secondary" id="Cancel"> Cancel </button>
+
+  
+  </form>
+  </div>
+    
+
+
+
+
+</div>
+
+
+<!-- Display -->
+
+   <div class="container">
+    <div class="addbook">
+    
+			
+    
+       </div>
+</div>
+
+
+
+
+
+</body>
+</html>
